@@ -33,7 +33,7 @@
         </ul>
     </div> -->
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-        <a *ngFor="let producto of _productos.productos" routerLink="/item"
+        <a *ngFor="let producto of _productos.productos" [routerLink]="['/item', producto.cod]"
             class="animated fadeIn rk-item ae-masonry__item">
             <img src="assets/data/productos/{{producto.url}}.jpg">
             <div class="item-meta">
